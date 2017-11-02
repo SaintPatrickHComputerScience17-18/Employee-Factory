@@ -1,0 +1,28 @@
+const Random = function(){
+
+    function continuousRange(a,b){
+        return (b-a)*Math.random()+a;
+    }
+
+    function discreteRangeIn(a,b){
+        return Math.round((b-a)*Math.random()+a);
+    }
+
+    function discreteRangeEx(a,b){
+        a = a+1;
+        b = b-1;
+        return discreteRangeIn(a,b);
+    }
+
+    function digit(d){
+        return Math.floor(Math.pow(10,d)*Math.random());
+    }
+    return {continuousRange,discreteRangeIn,discreteRangeEx,digit};
+};
+
+function main(){
+    console.log(Random().digit(5));
+}
+main();
+
+module.exports = Random;
