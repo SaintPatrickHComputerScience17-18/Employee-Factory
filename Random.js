@@ -21,8 +21,11 @@ const Random = function(){
 };
 
 function main(){
+    console.log(Random().continuousRange(10,50));
+    console.log(Random().discreteRangeIn(1,5));
+    console.log(Random().discreteRangeEx(1,5));
     console.log(Random().digit(5));
 }
-main();
+//main();
 
 module.exports = Random;
