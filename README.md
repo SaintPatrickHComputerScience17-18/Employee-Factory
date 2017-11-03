@@ -53,6 +53,6 @@ This module keeps track of three variables and has one function.
 
 This module keeps track of three variables and one function.
   - id: an 8-digit worker id number. Example c-12345678
-  - startDate:
-  - endDate
+  - startDate: as a string in the format "YYYY/MM/DD".
+  - endDate: as a string in the format "YYYY/MM/DD".
   - pay(): does not return an array, just the amount they are paid which is a random number between 500 and 9000.
